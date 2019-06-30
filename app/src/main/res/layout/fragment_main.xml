@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Autocomplete"
+            android:hint="Select client">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_view_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Orders"
+            android:theme="@style/PrimaryButton"/>
+
+        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_create_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Order"
+            android:theme="@style/PrimaryButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_view_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Client Details"
+            android:theme="@style/PrimaryButton"/>
+
+        <android.support.v7.widget.AppCompatButton android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register New Client"
+            android:theme="@style/PrimaryButton"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

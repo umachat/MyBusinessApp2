@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_expandable_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                style="@style/link_font"
+                android:id="@+id/lbl_order_id"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <ExpandableListView
+            android:id="@+id/lvexp_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/txt_msg_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No payments found for this order!"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</ScrollView>

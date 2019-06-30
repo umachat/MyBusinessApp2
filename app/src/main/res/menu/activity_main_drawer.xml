@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Register New Client" />
+        <item
+            android:id="@+id/nav_gallery"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_add_circle_outline_black_24dp"
+            android:title="Add Categories" />
+        <item
+            android:id="@+id/nav_slideshow"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="View Reports" />
+        <item
+            android:id="@+id/nav_manage"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_file_download_black_24dp"
+            android:title="Export" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="PixelPlus Settings" />
+            <item
+                android:id="@+id/nav_send"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_check_box_black_24dp"
+                android:title="Like And Share" />
+        </menu>
+    </item>
+
+</menu>
